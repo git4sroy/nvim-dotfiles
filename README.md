@@ -1,9 +1,9 @@
-This directory contains settings for various vim plugins and vim itself.
+This directory contains settings for various nvim plugins and nvim settings.
 
 ## Plugin Settings
 
-Each plugin's overrides/settings should be put in a separate file named `{plugin-name}.vim`.
+Each plugin's overrides/settings should be put in a separate file named `{plugin-name}.vim` under `${HOME}/.config/nvim/plugins/`.
 
-## Vim Settings
+## Nvim Settings
 
-General vim overrides/settings should be put in a separate file named `ohmy_yadr-{descriptive-name}.vim`.
+General vim overrides/settings should be put in a separate file named `settingname.vim` under `${HOME}/.config/nvim/settings/`.
