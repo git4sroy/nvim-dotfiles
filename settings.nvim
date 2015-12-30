@@ -1,4 +1,4 @@
-let nvimsettings = '~/.config/nvim/settings'
+let nvimsettings = '~/.config/nvim/nvim-dotfiles/settings'
 for fpath in split(globpath(nvimsettings, '*.nvim'), '\n')
   exe 'source' fpath
 endfor
