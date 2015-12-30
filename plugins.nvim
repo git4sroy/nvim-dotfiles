@@ -1,4 +1,4 @@
-let nvimplugins = '~/.config/nvim/nvim-dotfiles/plugins'
+let nvimplugins = '~/.config/nvim/plugins'
 for fpath in split(globpath(nvimplugins, '*.nvimplug'), '\n')
   exe 'source' fpath
 endfor
