@@ -1,0 +1,37 @@
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'Raimondi/delimitMate'
+Plug 'Shougo/neocomplete'
+Plug 'briandoll/change-inside-surroundings.vim'
+Plug 'godlygeek/tabular'
+Plug 'tomtom/tcomment_vim'
+Plug 'vim-scripts/camelcasemotion'
+Plug 'vim-scripts/matchit.zip'
+Plug 'kristijanhusak/vim-multiple-cursors'
+Plug 'Keithbsmiley/investigate.vim'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'bogado/file-line'
+Plug 'mattn/webapi-vim'
+Plug 'sjl/gundo.vim'
+Plug 'skwp/YankRing.vim'
+Plug 'tomtom/tlib_vim'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-ragtag'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'ryanoasis/vim-devicons'
+Plug 'vim-scripts/AnsiEsc.vim'
+Plug 'vim-scripts/AutoTag'
+Plug 'vim-scripts/lastpos.vim'
+Plug 'vim-scripts/sudo.vim'
+Plug 'goldfeld/ctrlr.vim'
+
+" This is for markdown-build composer"
+function! BuildComposer(info)
+  if a:info.status != 'unchanged' || a:info.force
+    !cargo build --release
+    UpdateRemotePlugins
+  endif
+endfunction
+
+Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
