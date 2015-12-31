@@ -25,6 +25,7 @@ Plug 'vim-scripts/AutoTag'
 Plug 'vim-scripts/lastpos.vim'
 Plug 'vim-scripts/sudo.vim'
 Plug 'goldfeld/ctrlr.vim'
+Plug 'bling/vim-airline'
 
 " This is for markdown-build composer"
 function! BuildComposer(info)
