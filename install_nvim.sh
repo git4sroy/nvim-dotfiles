@@ -12,9 +12,9 @@ rm -rf ${HOME}/.config/nvim/nvim-dotfiles
 echo "${ESCAPE}[32mLets create the symlink for ${ESCAPE}[32m.nvimrc${ESCAPE}[0m"
 ln -s ${HOME}/.config/nvim/init.vim ${HOME}/.nvimrc
 echo "${ESCAPE}[32mBoom plugins are on there way...${ESCAPE}[0m\n"
-if [[ -f /usr/local/bin/nvim ]]
-then
-  nvim +PlugInstall +qall
-else
-  echo "${ESCAPE}[31m Please install nvim: brew install neovim/neovim/neovim${ESCAPE}[0m"
-fi
+# if [[ -f /usr/local/bin/nvim ]]
+# then
+#   nvim +PlugInstall +qall
+# else
+#   echo "${ESCAPE}[31m Please install nvim: brew install neovim/neovim/neovim${ESCAPE}[0m"
+# fi
